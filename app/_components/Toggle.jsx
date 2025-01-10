@@ -12,7 +12,6 @@ const Toggle = () => {
         type="checkbox" 
         value={isToggled}
         onClick={()=> setIsToggled(!isToggled)}  
-
         />
         </div>
        <p className='text-3xl'> {isToggled ? "On" : "Off"}</p>
