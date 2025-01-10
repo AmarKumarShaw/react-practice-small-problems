@@ -21,7 +21,7 @@ const SearchFeature = () =>{
     item.name.toLowerCase().includes(name.toLowerCase())
     )
     return(
-        <div>
+    <div>
     <p>This is a Simple Search Feature</p>
     <input type="text" placeholder="Please Search Your Name"
     onChange={(e)=> setName(e.target.value)}
@@ -36,8 +36,8 @@ const SearchFeature = () =>{
         {
             filteredName.map((data,index)=>{
                 return(
-                    <div>
-                        <p key={index}>{data.name}</p>
+                    <div key={index}>
+                        <p >{data.name}</p>
                     </div>
                 )
             })
